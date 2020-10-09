@@ -2,7 +2,7 @@ import Discord, { Message } from 'discord.js';
 
 const client = new Discord.Client();
 
-const TOKEN_API = 'NzYyNzEyMjY1ODk1NDQ0NTAw.X3tJJg.n0Yq6vtGqIOQJb88ZXvmePuPOxU';
+const token = require('./config.json');
 
 //SI COPIO ALGO ES APARTIR DE ABAJO
 
@@ -16,4 +16,4 @@ client.on('message', message => {
     }
 })
 
-client.login(TOKEN_API);
+client.login(token);
